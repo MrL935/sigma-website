@@ -58,7 +58,7 @@ function playMusic() {
     }
 }
 function checkPassword() {
-    let correctPassword = "limonychicleamor29"; 
+    let correctPassword = "limonychiclebella29"; 
     let userInput = document.getElementById("passwordInput").value;
     let feedbackMessage = document.getElementById("feedbackMessage");
     let successMessage = document.getElementById("successMessage");
