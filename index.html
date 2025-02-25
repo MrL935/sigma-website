@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigma Male</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="border border-top"></div>
+    <div class="border border-bottom"></div>
+    <div class="border border-left"></div>
+    <div class="border border-right"></div>
+    <audio id="background-music" loop>
+        <source src="resources/cool.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div>
+        <h1>❣️❣️Happy Valentine's Day Gema Piedra Guerrero❣️❣️</h1>
+        <p id="message">Dale al botón para iniciar la música épica. Después abre la carta para ver tu regalo.</p>
+        <button onclick="showLove(); playMusic()">Botón 👍</button>
+    </div>
+    
+    <div class="letter-container" onclick="openLetter()">
+        <div class="envelope">
+            <img src="resources/pro sequel.png" alt="Envelope" id="envelope-img">
+        </div>
+        <div class="letter" id="letter">
+            <p>Hola Gema,</p>  
+            <p>Ya era hora de que te enseñara lo que tenía preparado para San Valentín.  
+            Te he hecho esta pequeña página web como forma de entregarte el regalo de verdad,  
+            así que disfruta de esta carta en tu fuente de texto favorita  
+            y de mi exuberante talento diseñando páginas web.</p>  
+
+            <br>  
+
+            <p>Para obtener tu regalo, deberás adivinar una contraseña utilizando estas tres pistas:</p>  
+
+            <ol>
+                <li>La primera parte de la contraseña es mi sabor favorito de helado cuando estaba ahí  
+                (son 3 palabras todas juntas, todo en minúsculas).</li>  
+                <li>La segunda parte es la solución de este  
+                    <a href="https://lapalabradeldia.com/archivo/normal/425/" target="_blank">Wordle</a>  
+                    (todo en minúsculas).</li>  
+                <li>La tercera y última parte es un número, que obtendrás combinando las edades  
+                que teníamos cuando nos dimos nuestro primer beso.</li>
+                </ol>
+
+                <p>Ahora dime, ¿cuál es la contraseña?</p>
+
+                <input type="password" id="passwordInput" placeholder="Introduce la contraseña..." class="password-box">
+                <button onclick="checkPassword()">Enviar</button>
+
+                <p id="feedbackMessage" class="feedback"></p>
+
+                <p id="successMessage" class="success hidden">Buena esa Gema 👍👍👍👍</p>
+                <a id="rewardLink" class="hidden" href="resources/1 2 3 taco.mp4" target="_blank">malware.exe</a>
+        </div>
+    </div>
+    
+    <audio id="heart-sound" src="resources/cajita.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

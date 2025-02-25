@@ -1,0 +1,198 @@
+body {
+    font-family: 'Dancing Script', cursive;
+    color: red;
+    background: pink;
+    text-align: center;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding-top: 10px;
+}
+
+h1 {
+    font-size: 5rem; 
+    margin-bottom: 10px
+}
+
+p {
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin-top: -20px;
+}
+
+button {
+    font-family: 'Dancing Script', cursive;
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.letter-container {
+    position: relative;
+    width: 200px;
+    height: 150px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.envelope img {
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.letter {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%) scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s ease-in-out;
+    background-color: #fdf5e6;
+    padding: 20px;
+    width: 550px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    border: 2px solid #d4a373; 
+    background-image: linear-gradient(white 0%, #fdf5e6 100%);
+}
+.letter p {
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.letter.show {
+    transform: translateX(-50%) scaleY(1);
+}
+@keyframes float-hearts {
+    0% {
+        transform: translateY(0) scale(0.8);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) scale(1.2);
+        opacity: 0;
+    }
+}
+
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 40px;
+    animation: float-hearts 1.5s ease-out forwards;
+    pointer-events: none;
+}
+.border {
+
+    position: fixed;
+    background-image: url('resources/descojone.jpg'); 
+    background-size: 60px 60px; 
+    background-repeat: repeat;
+    background-position: center;
+    z-index: 5;
+    pointer-events: none; 
+}
+
+
+.border-top {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-size: 60px 80px; 
+}
+
+
+.border-bottom {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-size: 60px 80px; 
+
+}
+.border-left {
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 100vh;
+    background-size: 80px 60px; 
+}
+
+
+.border-right {
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 100vh;
+    background-size: 80px 60px; 
+}
+
+
+h1, p, button, .letter-container {
+    position: relative;
+    z-index: 10; 
+}
+.password-box {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    margin-top: 8px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #d63384;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b82b6c;
+}
+
+.feedback {
+    font-size: 0.9rem;
+    color: red;
+    margin-top: 5px;
+}
+
+.success {
+    font-size: 1rem;
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
